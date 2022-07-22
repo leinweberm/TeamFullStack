@@ -1,5 +1,4 @@
-# Full-stack aplikace
-
+# Spuštění aplikace
 ## instal Yarn:
 `npm install --global yarn`
 ## instal Nest cli:
@@ -15,16 +14,35 @@ prikazy:
 `git config --global core.autocrlf false`
 ## nastaveni VS Code
 1. VSCode settings => Files:Eol nastavit na \n
-2. intalace eslint rozsireni
-3. instalace prettier rozsireni
-4. VSCode settings => Prettier: End Of Line nastavit na lf
-5. VSCode settings => Editor: Format On Save nastavit na checked
-6. VSCode settings => Eslint>Format:Enable nastavit na checked
+2. intalace eslint rozšíření
+3. instalace prettier rozšíření
+4. VSCode settings: `Prettier: End Of Line` nastavit na lf
+5. VSCode settings: `Editor: Format On Save` zaškrtnout
+6. VSCode settings: `Eslint>Format:Enable` zaškrtnout
 ## alternativni nasteveni VS Code
-1. pred kazdym ulozenim spustit script, ktery jsem pro toto vytvoril: yarn format
+1. před každým uložením spustit script, který jsem pro vás napsal: `yarn format`
 ## start server
 `yarn start`
-- spusti se na: localhost:3030
+- spustí se na: localhost:3030
 ## start client
 `yarn start`
-- spusti se na: localhost:3000
+- spustí se na: localhost:3000
+
+# Git
+## Git branches
+1. main = finální branch obsahující otestovanou, funkční verzi aplikace
+2. dev = pracovní verze
+3. temp = vytvoříte si pro každou změnu v programu svůj vlastní branch podle naming rules viz. níže. Po dokončení změny uděláte merge do dev branche, z ní vytvoříte pull request do mainu a svou temp branch smažete
+## Git naming rules
+tvar jména branche `typ/kdo/nazev`
+### typ:
+`feat` = nová funkcionalita v applikaci
+`fix` = oprava chyby
+`add` = přídání souborů které přímo nesouvisí s funkcí aplikace (obrázky, videa, textové soubory, atd...)
+`config` = změna nastavení config souborů
+### kdo:
+vase jmeno
+### nazev:
+popis_toho_co_jste_delali
+## Git commit naming
+`typ:`a kratky popis konkretni zmeny

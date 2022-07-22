@@ -1,0 +1,18 @@
+* text=auto eol=lf
+
+*.md eol=lf
+*.yarn eol=lf
+*.json eol=lf
+
+*.txt text
+
+*.jpg binary eol=lf
+*.data binary eol=lf
+*.eslintrc.js eol=lf
+*.prettierrc eol=lf
+*gitattributes eol=lf
+*.gitignore eol=lf
+*.lock eol=lf
+*.md eol=lf
+*.lock eol=lf
+*.log eol=lf

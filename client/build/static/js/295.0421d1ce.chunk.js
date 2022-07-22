@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkclient=self.webpackChunkclient||[]).push([[295],{295:function(e,n,t){t.r(n),t.d(n,{default:function(){return o}});var i=t(184);function o(){return(0,i.jsx)("div",{style:{boxSizing:"border-box",display:"flex",flexDirection:"column",height:"100vh",widthL:"100%",paddingTop:"70px",justifyContent:"center",alignContent:"center",background:"wheat",fontSize:"40px",color:"blue"},children:(0,i.jsx)("h1",{children:"Toto je CONTACT PAGE"})})}}}]);
+//# sourceMappingURL=295.0421d1ce.chunk.js.map

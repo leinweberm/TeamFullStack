@@ -13,12 +13,13 @@ prikazy:
 `git config core.eol lf`
 `git config --global core.autocrlf false`
 ## nastaveni VS Code
-1. VSCode settings => Files:Eol nastavit na \n
-2. intalace eslint rozšíření
-3. instalace prettier rozšíření
-4. VSCode settings: `Prettier: End Of Line` nastavit na lf
-5. VSCode settings: `Editor: Format On Save` zaškrtnout
-6. VSCode settings: `Eslint>Format:Enable` zaškrtnout
+1. VSCode settings => `Files:Eol` nastavit na \n
+2. intalace `eslint` rozšíření
+3. instalace `prettier` rozšíření
+4. instalace `Material` Icon Theme rozšíření
+5. VSCode settings: `Prettier: End Of Line` nastavit na lf
+6. VSCode settings: `Editor: Format On Save` zaškrtnout
+7. VSCode settings: `Eslint>Format:Enable` zaškrtnout
 ## alternativni nasteveni VS Code
 1. před každým uložením spustit script, který jsem pro vás napsal: `yarn format`
 ## start server
@@ -39,6 +40,7 @@ tvar jména branche `typ/kdo/nazev`
 `feat` = nová funkcionalita v applikaci
 `fix` = oprava chyby
 `add` = přídání souborů které přímo nesouvisí s funkcí aplikace (obrázky, videa, textové soubory, atd...)
+`delete` = smazání souborů které přímo nesouvisí s funkcí aplikace (obrázky, videa, textové soubory, atd...)
 `config` = změna nastavení config souborů
 ### kdo:
 vase jmeno
@@ -46,3 +48,8 @@ vase jmeno
 popis_toho_co_jste_delali
 ## Git commit naming
 `typ:`a kratky popis konkretni zmeny
+
+# Databáze PostGreSQL
+## Stažení PostGreSQL
+stáhnout verzi 10.21
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads

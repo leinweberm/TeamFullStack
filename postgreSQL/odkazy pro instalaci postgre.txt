@@ -1,0 +1,5 @@
+ODKAZY:
+
+spuštění pgAdmin 4
+master password: leprikonsql
+		

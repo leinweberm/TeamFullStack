@@ -45,10 +45,6 @@ module.exports = {
 			'error',
 			'always'
 		],
-		'space-before-function-paren': [
-			'error',
-			'always'
-		],
 		'arrow-body-style': [
 			'error',
 			'as-needed'

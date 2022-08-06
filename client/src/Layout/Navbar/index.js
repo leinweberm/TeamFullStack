@@ -10,7 +10,7 @@ export default function Navbar() {
 					display: 'flex',
 					flexDirection: 'row',
 					width: '100%',
-					height: '70px',
+					height: '60px',
 					position: 'fixed',
 					top: '0',
 					background: 'blue',

@@ -8,5 +8,5 @@ root.render(
 	// Abyste mi mohli pouzivat React Router musite jim obalit applikaci
 	<BrowserRouter>
 		<App />
-	</BrowserRouter> 
+	</BrowserRouter>,
 );

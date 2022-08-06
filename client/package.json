@@ -22,7 +22,7 @@
     "eject": "react-scripts eject",
     "format:lint": "eslint ./src --ext .js",
     "format:prettier": "prettier --write \"src/**/*.js\"",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.jss\" --fix",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.js\" --fix",
     "format": "yarn format:prettier && yarn format:lint && yarn lint",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

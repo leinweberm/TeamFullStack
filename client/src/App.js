@@ -9,17 +9,26 @@ import Layout from './Layout/Layout';
 const Home = React.lazy(() => import('./Pages/Home'));
 const Contact = React.lazy(() => import('./Pages/Contact'));
 
-function App () {
+function App() {
 	return (
 		// suspesne fallback slouzi jako loading screen pri prechodech mezi rendery stranek
 		<Suspense fallback={<Loading />}>
 			<Routes>
 				{/* na domovske strance je komponent Layout, ktery ridi vykreslovani komponent podle URL */}
-				<Route path='/' element={<Layout />}>
+				<Route
+					path="/"
+					element={<Layout />}
+				>
 					{/* pri prvnim nacteni stranky si vezme Layout index element jako prvni */}
-					<Route index element={<Home />} />
+					<Route
+						index
+						element={<Home />}
+					/>
 					{/* path je url adresa a element je komponent, ktery se na ni vyrenderuje */}
-					<Route path='/contact' element={<Contact />} />
+					<Route
+						path="/contact"
+						element={<Contact />}
+					/>
 				</Route>
 			</Routes>
 		</Suspense>

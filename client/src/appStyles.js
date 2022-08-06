@@ -1,6 +1,6 @@
 // z-index positioning:
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 // style variables:
 //    colours:
@@ -16,10 +16,10 @@ export const NAVBAR_HEIGHT = '60px';
 
 // components:
 export const PageContainer = styled.div`
-   display: flex;
-   height: 100vh;
-   width: 100%;
-   padding-top: 60;
-   justify-content: center;
-   align-items: center;
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	padding-top: 60;
+	justify-content: center;
+	align-items: center;
 `;

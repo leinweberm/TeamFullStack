@@ -49,9 +49,8 @@ module.exports = {
 			'error',
 			'as-needed'
 		],
-
+		"no-unused-vars": [
+			"off"
+		]
 	},
-	// 'editor.codeActionsOnSave': {
-	// 	'source.fixAll': true
-	// }
 };

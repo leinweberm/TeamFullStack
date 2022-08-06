@@ -24,16 +24,10 @@ export default function Navbar() {
 			>
 				<h2>Toto je Navbar</h2>
 				{/* NavLink nam meni URL v prohlizeci, zmenu URL hlida Router a vykresluje podle toho komponenty nasi aplikace */}
-				<NavLink
-					to="/"
-					style={{ color: 'white' }}
-				>
+				<NavLink to="/" style={{ color: 'white' }}>
 					HOME
 				</NavLink>
-				<NavLink
-					to="/contact"
-					style={{ color: 'white' }}
-				>
+				<NavLink to="/contact" style={{ color: 'white' }}>
 					Contact
 				</NavLink>
 			</div>

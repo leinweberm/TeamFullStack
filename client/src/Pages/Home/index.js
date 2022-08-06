@@ -1,4 +1,14 @@
+import { useEffect } from 'react';
+import { useRecoilState } from 'recoil';
+import { UI_HAS_SIDEBAR as hasSidebarAtom } from '../../atoms';
+
 export default function Home() {
+	const [hasSidebar, setHasSidebar] = useRecoilState(hasSidebarAtom);
+
+	useEffect(() => {
+		setHasSidebar(false);
+		console.log(hasSidebar);
+	});
 	return (
 		// inline styl pouze pro ilustrativni ucely
 		<div
@@ -16,9 +26,7 @@ export default function Home() {
 				color: 'blue',
 			}}
 		>
-			<h1>
-				Toto je HOME PAGE\
-			</h1>
+			<h1>Toto je HOME PAGE\</h1>
 		</div>
 	);
 }

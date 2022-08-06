@@ -2,7 +2,7 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 import { useEffect } from 'react';
 
 import useAxiosText from '../../Utils/useAxiosText';
-import { FilterButton, SidebarBody, SidebarItem, SidebarItemSlot } from './sidebarStyles';
+import { SidebarBody, SidebarItem, SidebarItemSlot } from './sidebarStyles';
 import { filterButtonStyle as fbStyle } from './sidebarData';
 import {
 	UI_SIDEBAR as sidebarAtom,
@@ -10,6 +10,7 @@ import {
 	CLIENT_ADRESS as urlAtom,
 	UI_HAS_SIDEBAR as hasSidebarAtom,
 } from '../../atoms';
+import FilterCard from '../FilterCard';
 
 export default function Sidebar() {
 	const [toggleSidebar, setToggleSidebar] = useRecoilState(sidebarAtom);
@@ -23,11 +24,13 @@ export default function Sidebar() {
 		subSelect: 'filter-menu',
 		subFolder: 'locales'
 	};
+	// PRO SLONA zde je repsonse {} i presto, ze by byt nemel.
 	const { response, error, loading } = useAxiosText(fetchParams);
 
 	const handleToggle = () => setToggleSidebar(!toggleSidebar);
 	useEffect(() => {
 		console.log('loaded');
+		// console.log(JSON.stringify(response));
 	}, []);
 
 	return (
@@ -37,7 +40,7 @@ export default function Sidebar() {
 		>
 			<SidebarItem>
 				<SidebarItemSlot>
-					
+					<FilterCard />
 				</SidebarItemSlot>
 				<SidebarItemSlot>
 					OK

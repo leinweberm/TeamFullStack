@@ -28,14 +28,16 @@ export default function useAxiosText(params) {
 				setloading(false);
 			});
 	};
-	// PRO SLONA   
+	// PRO SLONA => obe varianty delaji infinite loop
 	// useEffect(() => {
 	// 	fetchData();
 	// }, []);
-	(() => {
-		fetchData();
-	})();
 
+	// (() => {
+	// 	fetchData();
+	// })();
+
+	console.log(JSON.stringify(response));
 	return { response, error, loading };
 };
 
